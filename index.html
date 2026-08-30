@@ -84,6 +84,23 @@ a{color:var(--sea-deep)}
   padding:5px 16px;
   border-radius:999px;
 }
+.hero .cta{
+  display:block;
+  margin:20px auto 0;
+  max-width:290px;
+  background:var(--sea-deep);
+  color:#fff;text-decoration:none;
+  font-size:16px;font-weight:700;letter-spacing:.08em;
+  padding:15px 20px;
+  border-radius:11px;
+  box-shadow:0 6px 18px rgba(84,118,144,.3);
+}
+.hero .cta-note{
+  margin:9px 0 0;
+  font-size:12px;
+  color:var(--ink-soft);
+  letter-spacing:.04em;
+}
 
 /* ---------- shared ---------- */
 section{padding:52px 0}
@@ -160,6 +177,34 @@ h2{
 .room{background:#F7F5F1}
 .room .shot{border-radius:12px;margin-top:22px}
 .room .caption{font-size:12.5px;color:var(--ink-soft);margin:10px 0 0;text-align:center}
+
+/* ---------- letter from a student ---------- */
+.voice{
+  margin-top:36px;
+  padding-top:30px;
+  border-top:1px solid #E6E1D8;
+  display:grid;gap:18px;align-items:center;
+}
+.voice img{
+  border-radius:12px;
+  width:100%;max-width:280px;margin:0 auto;
+  box-shadow:0 5px 18px rgba(84,118,144,.16);
+}
+.voice h3{
+  margin:0 0 10px;
+  font-size:15px;letter-spacing:.06em;color:var(--sea-deep);
+}
+.voice .quote{
+  margin:0 0 12px;
+  font-size:18px;font-weight:700;line-height:1.7;
+}
+.voice .quote::before{content:"「"}
+.voice .quote::after{content:"」"}
+.voice p.body{margin:0;font-size:14px;color:var(--ink-soft)}
+@media (min-width:620px){
+  .voice{grid-template-columns:260px 1fr;gap:30px}
+  .voice img{max-width:none}
+}
 
 /* ---------- teacher ---------- */
 .teacher p{font-size:15px;margin:0 0 16px}
@@ -276,6 +321,8 @@ footer .copy{font-size:11px;color:#7B8C97;margin:0}
     <h1>紫あゆな<br>こども英語教室</h1>
     <p class="sub">沖縄で、子どもたちに英語を教えています</p>
     <span class="badge">2026年9月 開講／生徒さん募集中</span>
+    <a class="cta" href="#apply">受講のお申し込みへ</a>
+    <p class="cta-note">ご質問だけでも承ります</p>
   </div>
 </header>
 
@@ -316,6 +363,15 @@ footer .copy{font-size:11px;color:#7B8C97;margin:0}
     <p class="lead">これまでのレッスンから。みんなで声を出しながら進めています。</p>
     <img class="shot" src="images/class.jpg" alt="英語教室のようす">
     <p class="caption">レッスンのひとこま</p>
+
+    <div class="voice">
+      <img src="images/letter.jpg" alt="生徒さんが書いてくれたお手紙。「ぼくは、えいごをがんばりたいです」と書かれています">
+      <div>
+        <h3>生徒さんからのお手紙</h3>
+        <p class="quote">ぼくは、えいごをがんばりたいです</p>
+        <p class="body">レッスンに通ってくれているお子さんが、書いて渡してくれたものです。自分から「やってみたい」と思えるところまで来ると、あとは伸びていきます。そこまでゆっくりお付き合いするのが、この教室のしていることです。</p>
+      </div>
+    </div>
   </div>
 </section>
 
