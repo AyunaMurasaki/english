@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>紫あゆな こども英語教室｜受講のお申し込み</title>
+<meta name="description" content="沖縄で、子どもたちに英語を教えています。遊びながら音から入って、いつのまにか読めるようになる。紫あゆなのこども英語教室のご案内とお申し込みです。">
+<meta property="og:title" content="紫あゆな こども英語教室｜受講のお申し込み">
+<meta property="og:description" content="沖縄で、子どもたちに英語を教えています。遊びから始めて、英検の対策へとつなげていきます。">
+<meta property="og:image" content="images/hero-sea.jpg">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --sea:#7AA6C6;
+  --sea-deep:#547690;
+  --sky:#C2DCE4;
+  --sand:#EED0C5;
+  --coral:#E79FA0;
+  --sun:#E6C792;
+  --ink:#2B3A44;
+  --ink-soft:#5A6B76;
+  --paper:#FCFBF9;
+  --line:#E4E9EC;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic Medium","Yu Gothic",Meiryo,system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.9;
+  font-size:16px;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--sea-deep)}
+
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  min-height:74vh;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  text-align:center;
+  background:url("images/hero-sea.jpg") center 40%/cover no-repeat;
+}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(255,255,255,.15) 0%,rgba(255,255,255,.55) 55%,rgba(252,251,249,1) 100%);
+}
+.hero-inner{position:relative;z-index:1;padding:0 24px 44px}
+.hero-portrait{
+  width:132px;height:132px;border-radius:50%;
+  object-fit:cover;object-position:center 22%;
+  margin:0 auto 18px;
+  border:5px solid #fff;
+  box-shadow:0 6px 22px rgba(84,118,144,.28);
+}
+.hero h1{
+  margin:0 0 6px;
+  font-size:28px;
+  letter-spacing:.06em;
+  font-weight:700;
+  line-height:1.5;
+}
+.hero .sub{
+  margin:0 0 4px;
+  font-size:15px;
+  color:var(--ink-soft);
+  letter-spacing:.06em;
+}
+.hero .badge{
+  display:inline-block;
+  margin-top:14px;
+  background:var(--coral);
+  color:#fff;
+  font-size:13px;
+  letter-spacing:.1em;
+  padding:5px 16px;
+  border-radius:999px;
+}
+
+/* ---------- shared ---------- */
+section{padding:52px 0}
+h2{
+  font-size:21px;
+  margin:0 0 6px;
+  letter-spacing:.06em;
+  font-weight:700;
+}
+.h2-en{
+  display:block;
+  font-size:11px;
+  letter-spacing:.24em;
+  color:var(--sea);
+  font-weight:600;
+  margin-bottom:4px;
+}
+.lead{color:var(--ink-soft);font-size:15px;margin:0 0 26px}
+
+/* ---------- cards ---------- */
+.cards{display:grid;gap:14px}
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:20px 22px;
+}
+.card h3{
+  margin:0 0 6px;
+  font-size:16px;
+  display:flex;align-items:center;gap:9px;
+}
+.card h3 .n{
+  flex:none;
+  width:26px;height:26px;border-radius:50%;
+  background:var(--sky);color:var(--sea-deep);
+  font-size:12px;font-weight:700;
+  display:grid;place-items:center;
+}
+.card p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+
+.note{
+  margin-top:16px;
+  background:#F4F8FA;
+  border-radius:var(--radius);
+  padding:16px 18px;
+  font-size:13.5px;
+  color:var(--ink-soft);
+}
+.note strong{color:var(--ink)}
+
+/* ---------- facts ---------- */
+.facts{
+  margin:0 0 22px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:6px 20px;
+}
+.facts > div{
+  display:flex;flex-wrap:wrap;gap:2px 14px;
+  padding:13px 0;
+  border-bottom:1px solid var(--line);
+}
+.facts > div:last-child{border-bottom:none}
+.facts dt{
+  flex:none;width:126px;
+  font-size:13px;font-weight:700;color:var(--sea-deep);
+  letter-spacing:.04em;
+}
+.facts dd{margin:0;font-size:14.5px;flex:1;min-width:180px}
+
+/* ---------- lesson photo ---------- */
+.room{background:#F7F5F1}
+.room .shot{border-radius:12px;margin-top:22px}
+.room .caption{font-size:12.5px;color:var(--ink-soft);margin:10px 0 0;text-align:center}
+
+/* ---------- teacher ---------- */
+.teacher p{font-size:15px;margin:0 0 16px}
+
+/* ---------- form ---------- */
+.form-section{background:linear-gradient(180deg,#EAF3F7 0%,#F7FAFB 100%)}
+form{
+  background:#fff;
+  border-radius:var(--radius);
+  padding:26px 22px;
+  border:1px solid var(--line);
+}
+fieldset{border:none;margin:0 0 6px;padding:0}
+legend{
+  font-size:12px;letter-spacing:.14em;font-weight:700;color:var(--sea-deep);
+  background:#EFF5F8;border-radius:999px;padding:5px 14px;margin-bottom:18px;
+}
+.field{margin-bottom:24px}
+label.q,span.q{
+  display:block;
+  font-size:15px;
+  font-weight:700;
+  margin-bottom:3px;
+}
+.req,.opt{
+  font-size:10.5px;
+  padding:2px 7px;
+  border-radius:4px;
+  margin-left:8px;
+  vertical-align:2px;
+  letter-spacing:.06em;
+  font-weight:600;
+}
+.req{background:var(--coral);color:#fff}
+.opt{background:#EDEFF1;color:var(--ink-soft)}
+.help{font-size:12.5px;color:var(--ink-soft);margin:0 0 10px}
+input[type=text],input[type=email],input[type=tel],textarea,select{
+  width:100%;
+  font:inherit;
+  font-size:16px;
+  color:var(--ink);
+  padding:12px 13px;
+  border:1px solid #D3DBE0;
+  border-radius:9px;
+  background:#fff;
+}
+textarea{min-height:96px;resize:vertical}
+input:focus,textarea:focus,select:focus{
+  outline:none;border-color:var(--sea);box-shadow:0 0 0 3px rgba(122,166,198,.2);
+}
+.choices{display:grid;gap:8px}
+.choices label{
+  display:flex;align-items:center;gap:10px;
+  border:1px solid #D3DBE0;border-radius:9px;
+  padding:11px 14px;font-size:14.5px;cursor:pointer;
+}
+.choices input{accent-color:var(--sea-deep);flex:none;width:18px;height:18px;margin:0}
+.choices label:has(input:checked){border-color:var(--sea);background:#F2F8FB}
+
+.privacy{
+  background:#F7F5F1;
+  border-radius:11px;
+  padding:16px 17px;
+  font-size:12.5px;
+  line-height:1.85;
+  color:var(--ink-soft);
+  margin-bottom:20px;
+}
+.privacy strong{display:block;color:var(--ink);font-size:13px;margin-bottom:6px}
+
+button[type=submit]{
+  width:100%;
+  font:inherit;font-size:17px;font-weight:700;letter-spacing:.08em;
+  color:#fff;background:var(--sea-deep);
+  border:none;border-radius:11px;
+  padding:17px;
+  cursor:pointer;
+}
+button[type=submit]:disabled{background:#AEBEC8;cursor:default}
+
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+.msg{margin-top:16px;font-size:14px;border-radius:10px;padding:14px 16px;display:none}
+.msg.show{display:block}
+.msg.err{background:#FDF0F0;color:#9C4A4A}
+.msg.ok{background:#EEF6F0;color:#3B6B4C}
+
+.done{display:none;text-align:center;padding:14px 0}
+.done h3{font-size:19px;margin:0 0 12px}
+.done p{font-size:14.5px;color:var(--ink-soft);margin:0 0 10px}
+
+/* ---------- footer ---------- */
+footer{background:#2B3A44;color:#D6DEE3;padding:40px 0 34px;text-align:center}
+footer .name{font-size:17px;letter-spacing:.1em;color:#fff;margin:0 0 4px}
+footer .role{font-size:12.5px;margin:0 0 22px;color:#9DB0BC}
+.sns{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.sns a{
+  color:#D6DEE3;text-decoration:none;font-size:13px;letter-spacing:.05em;
+  border:1px solid #47585F;border-radius:999px;padding:8px 17px;
+}
+footer .copy{font-size:11px;color:#7B8C97;margin:0}
+
+@media (min-width:620px){
+  .hero h1{font-size:33px}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <img class="hero-portrait" src="images/portrait.jpg" alt="紫あゆな">
+    <h1>紫あゆな<br>こども英語教室</h1>
+    <p class="sub">沖縄で、子どもたちに英語を教えています</p>
+    <span class="badge">2026年9月 開講／生徒さん募集中</span>
+  </div>
+</header>
+
+<section class="wrap">
+  <span class="h2-en">LESSON</span>
+  <h2>教室のご案内</h2>
+  <p class="lead">遊びながら音から入って、いつのまにか読めるようになる。そんな進め方の教室です。</p>
+
+  <dl class="facts">
+    <div><dt>開講</dt><dd>2026年9月</dd></div>
+    <div><dt>回数</dt><dd>月に1回のペースで開く予定です</dd></div>
+    <div><dt>会費</dt><dd>お問い合わせください</dd></div>
+    <div><dt>対象・曜日・場所</dt><dd>お子さんのご様子とご希望をうかがってご案内します</dd></div>
+  </dl>
+
+  <div class="cards">
+    <div class="card">
+      <h3><span class="n">1</span>はじめは音とカード遊びから</h3>
+      <p>外国の教材やカード遊びから入ります。文字より先に音に慣れることで、耳が英語の形を自然に覚えていきます。英語がはじめてのお子さんも、そこから始められます。</p>
+    </div>
+    <div class="card">
+      <h3><span class="n">2</span>オリジナルの教材を使います</h3>
+      <p>紫あゆなのオリジナル教材を使いながら、お子さんの様子に合わせて進めます。歌やリズムもまじえて、飽きずに続けられるようにしています。</p>
+    </div>
+    <div class="card">
+      <h3><span class="n">3</span>英検の対策へつなげます</h3>
+      <p>遊びから読み書きへ、そして英検の対策へ。段階を追ってつなげていきますので、先の目標を持って続けていただけます。</p>
+    </div>
+  </div>
+
+  <p class="note"><strong>くわしいご案内はこちらからお送りします。</strong>下のフォームからお申し込みいただきましたら、会費と、開講の曜日・時間・場所を、あらためてご連絡いたします。ご質問だけでも承りますので、迷っていらっしゃる段階でもお気軽にどうぞ。</p>
+</section>
+
+<section class="room">
+  <div class="wrap">
+    <span class="h2-en">CLASSROOM</span>
+    <h2>教室のようす</h2>
+    <p class="lead">これまでのレッスンから。みんなで声を出しながら進めています。</p>
+    <img class="shot" src="images/class.jpg" alt="英語教室のようす">
+    <p class="caption">レッスンのひとこま</p>
+  </div>
+</section>
+
+<section class="wrap teacher">
+  <span class="h2-en">TEACHER</span>
+  <h2>お教えしている人</h2>
+  <p>沖縄で歌っています、紫あゆなです。</p>
+  <p>ライブやイベントで歌い、ラジオにも出演しています。歌でつちかった耳と声を、子どもたちの英語のレッスンにも生かしています。</p>
+  <p>音から入る楽しさを知っていただきたくて、この教室を始めます。お子さんのペースを大切に、ゆっくりお付き合いします。</p>
+</section>
+
+<section class="form-section" id="apply">
+  <div class="wrap">
+    <span class="h2-en">APPLY</span>
+    <h2>受講のお申し込み</h2>
+    <p class="lead">下記にご記入のうえ、いちばん下のボタンをお押しください。折り返しこちらからご連絡いたします。</p>
+
+    <form id="applyForm" novalidate>
+      <input type="hidden" name="form" value="english">
+
+      <fieldset>
+        <legend>お子さんについて</legend>
+
+        <div class="field">
+          <label class="q" for="childName">お子さんのお名前<span class="req">必須</span></label>
+          <p class="help">フルネームでお願いします。</p>
+          <input type="text" id="childName" name="childName" required>
+        </div>
+
+        <div class="field">
+          <label class="q" for="childAge">お子さんの年齢<span class="req">必須</span></label>
+          <p class="help">いまの年齢をお選びください。</p>
+          <select id="childAge" name="childAge" required>
+            <option value="">お選びください</option>
+            <option value="3歳">3歳</option>
+            <option value="4歳">4歳</option>
+            <option value="5歳">5歳</option>
+            <option value="6歳">6歳</option>
+            <option value="7歳">7歳</option>
+            <option value="8歳">8歳</option>
+            <option value="9歳">9歳</option>
+            <option value="10歳">10歳</option>
+            <option value="11歳">11歳</option>
+            <option value="12歳">12歳</option>
+            <option value="13歳">13歳</option>
+            <option value="14歳">14歳</option>
+            <option value="15歳">15歳</option>
+            <option value="その他">その他（下の欄にお書きください）</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="q" for="school">通っている園・学校<span class="opt">任意</span></label>
+          <p class="help">学年の目安にさせていただきます。お書きにならなくても差し支えありません。</p>
+          <input type="text" id="school" name="school">
+        </div>
+
+        <div class="field">
+          <span class="q">英語のご経験<span class="req">必須</span></span>
+          <p class="help">はじめてでも大丈夫です。進め方の参考にします。</p>
+          <div class="choices">
+            <label><input type="radio" name="experience" value="はじめてです" required>はじめてです</label>
+            <label><input type="radio" name="experience" value="少し習ったことがあります">少し習ったことがあります</label>
+            <label><input type="radio" name="experience" value="いま習っています">いま習っています</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>保護者の方について</legend>
+
+        <div class="field">
+          <label class="q" for="parentName">保護者のお名前<span class="req">必須</span></label>
+          <p class="help">フルネームでお願いします。</p>
+          <input type="text" id="parentName" name="parentName" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label class="q" for="parentKana">ふりがな<span class="req">必須</span></label>
+          <p class="help">ひらがなでお書きください。</p>
+          <input type="text" id="parentKana" name="parentKana" required>
+        </div>
+
+        <div class="field">
+          <label class="q" for="email">メールアドレス<span class="req">必須</span></label>
+          <p class="help">教室のご案内をこちらへお送りします。</p>
+          <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+        </div>
+
+        <div class="field">
+          <label class="q" for="tel">お電話番号<span class="req">必須</span></label>
+          <p class="help">開講のご案内や、お急ぎのご連絡に使わせていただきます。</p>
+          <input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>そのほか</legend>
+
+        <div class="field">
+          <span class="q">このページをどちらでご覧になりましたか<span class="req">必須</span></span>
+          <p class="help">ご案内の届け方を整えるための参考にします。</p>
+          <div class="choices">
+            <label><input type="radio" name="source" value="公式LINE" required>公式LINE</label>
+            <label><input type="radio" name="source" value="ホームページ">ホームページ</label>
+            <label><input type="radio" name="source" value="SNS">Instagram・Facebook などのSNS</label>
+            <label><input type="radio" name="source" value="その他">その他・ご紹介</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q" for="message">ご質問・ご相談<span class="opt">任意</span></label>
+          <p class="help">ご希望の曜日や時間帯、ご心配なことなど、何でもお書きください。</p>
+          <textarea id="message" name="message"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="hp" aria-hidden="true">
+        <label>ここは空欄のままにしてください<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <div class="privacy">
+        <strong>ご記入いただく情報の使い道</strong>
+        このフォームでお預かりする保護者の方とお子さんのお名前・年齢・園や学校・ご連絡先は、紫あゆな（公式LINEアカウントの運営者）がお預かりします。英語教室のご案内とご連絡にのみ使わせていただき、ほかの目的には使いません。フォームと名簿の管理は、公式LINEの構築・保守をお任せしている担当者が、運営の目的の範囲でのみ行います。この担当者を除き、第三者へお渡しすることはありません。お預かりした内容は Google のサービス上に保管しています。お申し込みの取り消し、ご記入内容の確認・訂正をご希望のときは、公式LINEの「お問い合わせ」からお知らせください。
+      </div>
+
+      <button type="submit" id="submitBtn">この内容で申し込む</button>
+      <div class="msg" id="msg"></div>
+    </form>
+
+    <div class="done" id="done">
+      <h3>お申し込みありがとうございました</h3>
+      <p>英語教室へのお申し込みを承りました。ご記入のメールアドレスへ、確認のご連絡をお送りしています。</p>
+      <p>教室は2026年9月に開講し、月に1回のペースで開く予定です。会費と、開講の曜日・時間・場所は、あらためてこちらからご連絡いたします。数日お時間をいただくことがありますので、お待ちいただけましたら幸いです。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="name">紫あゆな</p>
+  <p class="role">Ayuna Murasaki</p>
+  <div class="sns">
+    <a href="https://lin.ee/VMailZP" target="_blank" rel="noopener">公式LINE</a>
+    <a href="https://ayunamurasaki.github.io/fanclub/" target="_blank" rel="noopener">ファンクラブ</a>
+    <a href="https://www.instagram.com/369murasakiayuna/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=100011735827150" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.youtube.com/@%E7%B4%AB%E3%81%82%E3%82%86%E3%81%AA" target="_blank" rel="noopener">YouTube</a>
+  </div>
+  <p class="copy">&copy; 紫あゆな</p>
+</footer>
+
+<script>
+/* ==================================================================
+   送信先（Google Apps Script のウェブアプリURL）
+   ファンクラブのご入会LPと同じ1本のURLを使う。どちらの受け口へ渡すかは、
+   このフォームが送る form=english で GAS 側が振り分ける（28_ の §英語教室）。
+
+   ⚠ 順番がある。GAS を「デプロイを管理 → 鉛筆 → 新バージョン」で入れ替えて、
+   §英語教室 が本番に載ってから、このページを公開する。
+   古いバージョンのままだと english の振り分けが無く、
+   ファンクラブの名簿へ中身の欠けた行が入ってしまう。
+
+   空のあいだは送信せず「準備中」の案内を出す（プレースホルダを世に出さないため）。
+   ================================================================== */
+var GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbzU6W5h_qumfFetUk39fFSXhtHMdVGFfwA5wbZMCIYysczN7iP7ua1I94_9-havf5g/exec";
+
+(function () {
+  var form = document.getElementById("applyForm");
+  var btn = document.getElementById("submitBtn");
+  var msg = document.getElementById("msg");
+  var done = document.getElementById("done");
+  var el = function (n) { return form.elements[n]; };
+
+  /* 流入元の初期選択: リッチメニューからは ?from=line で開く */
+  var from = new URLSearchParams(location.search).get("from");
+  var map = { line: "公式LINE", hp: "ホームページ", sns: "SNS" };
+  if (map[from]) {
+    var pre = form.querySelector('input[name="source"][value="' + map[from] + '"]');
+    if (pre) pre.checked = true;
+  }
+
+  function show(text, kind) {
+    msg.textContent = text;
+    msg.className = "msg show " + kind;
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    msg.className = "msg";
+
+    if (el("website").value) return;           // ボット除け（人には見えない欄）
+
+    var required = [
+      ["childName", "お子さんのお名前をご記入ください。"],
+      ["childAge", "お子さんの年齢をお選びください。"],
+      ["parentName", "保護者のお名前をご記入ください。"],
+      ["parentKana", "ふりがなをご記入ください。"],
+      ["email", "メールアドレスをご記入ください。"],
+      ["tel", "お電話番号をご記入ください。"]
+    ];
+    for (var i = 0; i < required.length; i++) {
+      var f = el(required[i][0]);
+      if (!f.value.trim()) {
+        show(required[i][1], "err");
+        f.focus();
+        return;
+      }
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el("email").value.trim())) {
+      show("メールアドレスの形をご確認ください。", "err");
+      el("email").focus();
+      return;
+    }
+    var radios = ["experience", "source"];
+    var labels = { experience: "英語のご経験", source: "このページをどちらでご覧になりましたか" };
+    for (var j = 0; j < radios.length; j++) {
+      if (!form.querySelector('input[name="' + radios[j] + '"]:checked')) {
+        show(labels[radios[j]] + "をお選びください。", "err");
+        return;
+      }
+    }
+
+    if (!GAS_ENDPOINT) {
+      show("ただいま受付の準備を進めています。まもなく開始しますので、少しお待ちください。", "err");
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = "送信しています…";
+
+    /* Apps Script が確実に読める形（application/x-www-form-urlencoded）で送る。
+       独自のヘッダを付けないので、送信前の問い合わせ通信（preflight）が起きない。
+       submittedAt は押すたびに1つだけ作る。下の送り直しでも同じ値を使うので、
+       受け側は同じお申し込みだと分かり、名簿が2行に増えない。 */
+    var data = new URLSearchParams(new FormData(form));
+    data.append("submittedAt", new Date().toISOString());
+
+    function succeeded() {
+      form.style.display = "none";
+      done.style.display = "block";
+      done.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+    function failed() {
+      btn.disabled = false;
+      btn.textContent = "この内容で申し込む";
+      show("送信できませんでした。通信の状態をご確認のうえ、もう一度お試しください。", "err");
+    }
+
+    fetch(GAS_ENDPOINT, { method: "POST", body: data })
+      .then(succeeded)
+      .catch(function () {
+        /* 送信は届いたのに、別ドメインの決まりでお返事だけ読めないことがある。
+           その場合にここへ来るので、お返事を読まない形でもう一度だけ送る。 */
+        fetch(GAS_ENDPOINT, { method: "POST", mode: "no-cors", body: data })
+          .then(succeeded)
+          .catch(failed);
+      });
+  });
+})();
+</script>
+
+</body>
+</html>
